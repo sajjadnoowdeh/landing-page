@@ -3,7 +3,9 @@ $width:100%;
 $height:100%;
 $font-nunito :'Nunito', sans-serif;
 $color-secundry : rgba(255, 255, 255, 0.5);
+$color-muted:rgba(0, 0, 0, 0.5);
 $bg-light:#64a19d;
+$bg-secundry:#f8f9fa;
 $font-sm:13px;
 
 //////////interpoletion
@@ -38,3 +40,6 @@ body,html{
 
 }
 
+%letter-space{
+  letter-spacing: 1;
+}

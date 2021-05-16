@@ -93,3 +93,62 @@ header {
   }
   
 }
+
+
+// section-projects
+.section-projects{
+  padding: 9rem 0;
+  background-color: $bg-secundry;
+  p{
+      color: $color-muted;
+      max-width: 89%;
+  }
+  .left-img-projects{
+    position: relative;
+    @media (min-width:990px) {
+      &::after{
+        content: "";
+        position: absolute;
+        top: 28%;
+        width: 9px;
+        height: 183px;
+        background-color: $bg-light;
+    }
+    }
+  }
+  .right-projects{
+    height: 15rem;
+    .right-txt{
+      @extend %letter-space;
+    }
+    p{
+      @extend %letter-space;
+    }
+  }
+
+  // bottom projects
+  .right-bottom-projects{
+    max-width: 95%;
+    position: relative;
+    p{
+      color: $color-secundry;
+    }
+    @media (min-width:990px) {
+      max-width: 75%;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 115px;
+        height: 5px;
+        background-color: $bg-light;
+      }
+    }
+   
+  }
+  .left-bottom-projects{
+    @extend  .right-bottom-projects;
+    &::after{
+      right: 0;
+    }
+  }
+}

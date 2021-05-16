@@ -1,5 +1,6 @@
 .navbar-light .navbar-brand {
   color: rgba(255, 255, 255, 0.5);
+  @extend %letter-space;
   @media (max-width: 990px) {
     color: black !important;
   }
