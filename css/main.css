@@ -7,7 +7,7 @@ body, html {
   overflow-x: hidden;
 }
 
-.navbar-light .navbar-brand, .navbar-light .header-bg-top .nav-link, .header-bg-top .navbar-light .nav-link, .navbar-light .navbar-nav .active > .nav-link, .section-projects .right-projects .right-txt, .section-projects .right-projects p {
+.navbar-light .navbar-brand, .navbar-light .header-bg-top .nav-link, .header-bg-top .navbar-light .nav-link, .navbar-light .navbar-nav .active > .nav-link, .section-projects .right-projects .right-txt, .section-projects .right-projects p, .section-projects .right-bottom-projects h4, .section-projects .left-bottom-projects h4, .section-projects .right-bottom-projects p, .section-projects .left-bottom-projects p {
   letter-spacing: 1;
 }
 
@@ -147,7 +147,13 @@ header {
 
 .section-projects p {
   color: rgba(0, 0, 0, 0.5);
-  max-width: 89%;
+  max-width: 100%;
+}
+
+@media (max-width: 990px) {
+  .section-projects p {
+    max-width: 85%;
+  }
 }
 
 .section-projects .left-img-projects {

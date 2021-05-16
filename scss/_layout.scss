@@ -101,7 +101,10 @@ header {
   background-color: $bg-secundry;
   p{
       color: $color-muted;
-      max-width: 89%;
+      max-width: 100%;
+      @media (max-width:990px) {
+        max-width: 85%;
+      }
   }
   .left-img-projects{
     position: relative;
@@ -130,8 +133,12 @@ header {
   .right-bottom-projects{
     max-width: 95%;
     position: relative;
+    h4{
+      @extend %letter-space;
+    }
     p{
       color: $color-secundry;
+      @extend %letter-space;
     }
     @media (min-width:990px) {
       max-width: 75%;
