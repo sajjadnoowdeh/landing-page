@@ -27,7 +27,6 @@ body, html {
 header {
   width: 100%;
   min-height: 60rem;
-  background-color: red;
 }
 
 .nav-main {
@@ -91,5 +90,49 @@ header {
   font-size: 13px;
   letter-spacing: 3;
   box-shadow: -1px 5px 15px -6px #000000;
+}
+
+.header-bottom {
+  background-image: linear-gradient(179deg, #000000, #272828);
+  height: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .header-bottom {
+    padding-top: 4rem;
+  }
+}
+
+.header-bottom h2 {
+  margin-top: 14rem;
+}
+
+.header-bottom .header-bottom-txt {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 59%;
+}
+
+@media (max-width: 990px) {
+  .header-bottom .header-bottom-txt {
+    max-width: 90%;
+  }
+}
+
+.header-bottom .header-bottom-txt .link-light {
+  color: #64a19d;
+}
+
+.header-bottom .header-bottom-img {
+  max-width: 80%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 990px) {
+  .header-bottom .header-bottom-img {
+    max-width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

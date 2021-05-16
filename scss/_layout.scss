@@ -1,7 +1,7 @@
 header {
   width: 100%;
   min-height: 60rem;
-  background-color: red;
+
 }
 
 ////////////conflict sass by linear-gradiant move code to file linear.css
@@ -62,3 +62,34 @@ header {
 
 
 // bottom-header
+.header-bottom{
+  background-image: linear-gradient(179deg, #000000, #272828);
+  height: $height;
+  position: relative;
+  @media (min-width:768px) {
+    padding-top: 4rem;
+  }
+  h2{
+    margin-top: 14rem;
+  }
+  .header-bottom-txt{
+    text-align: center;
+    color: $color-secundry;
+    max-width: 59%;
+    @media (max-width:990px) {
+      max-width: 90%;
+    }
+    .link-light{
+      color: $bg-light;
+    }
+  }
+  .header-bottom-img{
+    max-width: 80%;
+    @media (max-width:990px) {
+      max-width: 90%;
+    }
+    position: absolute;
+    bottom: 0;
+  }
+  
+}
