@@ -1,0 +1,39 @@
+////////////Varibailes
+$width:100%;
+$height:100%;
+$font-nunito :'Nunito', sans-serif;
+$color-secundry : rgba(255, 255, 255, 0.5);
+$bg-light:#64a19d;
+$font-sm:13px;
+
+//////////interpoletion
+$f: "font";
+*{
+   box-sizing: border-box;
+   #{$f}-family: $font-nunito;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+@mixin wh100() {
+    width:$width;
+    height: $height;
+}
+
+@mixin btn-light() {
+      background-color: $bg-light;
+      border: 0;
+      padding: 17px 37px;
+      color: #f6f6f6;
+      font-size: $font-sm;
+      letter-spacing: 3;
+      box-shadow: -1px 5px 15px -6px #000000;
+}
+
+@mixin  flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

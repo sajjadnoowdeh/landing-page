@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  min-height: 60rem;
+  background-color: red;
+}
+
+////////////conflict sass by linear-gradiant move code to file linear.css
+// .header-bg-top{
+//     width: 100%;
+//     background-image: linear-gradient(rgb(60 60 60 / 21%), rgb(0 0 0 / 99%)), url(../assets/img/bg-masthead.jpg);
+//     background-size: cover;
+//     min-height: 40rem;
+//     .nav-link{
+//         color: $color-secundry !important;
+//     }
+//     .navbar-brand{
+//         @extend .nav-link;
+//     }
+// }
+.nav-main{
+    transition: all 0.4s ease-in-out;
+    @media (max-width: 990px) {
+       background-color: white;
+      }
+}
+.header-main {
+  height: $height;
+ 
+  h1 {
+    letter-spacing: 11;
+    #{$f}-size: 120px;
+    margin-top: 9rem;
+    background-image: linear-gradient(179deg, #ffffff, #191818cc);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    @media (max-width: 990px) {
+      #{$f}-size: 60px;
+      background-image: linear-gradient(179deg, #ffffff, #464646cc);
+    }
+    @media (max-width: 545px) {
+      #{$f}-size: 39px;
+    }
+  }
+  p {
+    color: $color-secundry;
+    #{$f}-size: 18px;
+    max-width: 35%;
+    text-align: center;
+    @media (max-width: 768px) {
+      max-width: 74%;
+      #{$f}-size: 17px;
+    }
+  }
+  .button-light {
+    @include btn-light();
+  }
+}
+
+
+// bottom-header

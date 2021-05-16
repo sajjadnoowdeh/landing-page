@@ -1,0 +1,12 @@
+.header-bg-top {
+    width: 100%;
+    background-image: linear-gradient(rgb(60 60 60 / 21%), rgb(0 0 0 / 99%)), url(../assets/img/bg-masthead.jpg);
+    background-size: cover;
+    min-height: 40rem;
+  }
+  
+  /* .header-bg-top .nav-link, .header-bg-top .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+  } */
+
+  
