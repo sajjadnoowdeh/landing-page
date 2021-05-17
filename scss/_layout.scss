@@ -1,7 +1,6 @@
 header {
   width: 100%;
   min-height: 60rem;
-
 }
 
 ////////////conflict sass by linear-gradiant move code to file linear.css
@@ -17,15 +16,15 @@ header {
 //         @extend .nav-link;
 //     }
 // }
-.nav-main{
-    transition: all 0.4s ease-in-out;
-    @media (max-width: 990px) {
-       background-color: white;
-      }
+.nav-main {
+  transition: all 0.4s ease-in-out;
+  @media (max-width: 990px) {
+    background-color: white;
+  }
 }
 .header-main {
   height: $height;
- 
+
   h1 {
     letter-spacing: 11;
     #{$f}-size: 120px;
@@ -60,89 +59,86 @@ header {
   }
 }
 
-
 // bottom-header
-.header-bottom{
+.header-bottom {
   background-image: linear-gradient(179deg, #000000, #272828);
   height: $height;
   position: relative;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     padding-top: 4rem;
   }
-  h2{
+  h2 {
     margin-top: 14rem;
   }
-  .header-bottom-txt{
+  .header-bottom-txt {
     text-align: center;
     color: $color-secundry;
     max-width: 59%;
-    @media (max-width:990px) {
+    @media (max-width: 990px) {
       max-width: 90%;
     }
-    .link-light{
+    .link-light {
       color: $bg-light;
     }
   }
-  .header-bottom-img{
+  .header-bottom-img {
     max-width: 80%;
-    @media (max-width:990px) {
+    @media (max-width: 990px) {
       max-width: 90%;
     }
     position: absolute;
     bottom: 0;
   }
-  
 }
 
-
 // section-projects
-.section-projects{
+.section-projects {
   padding: 9rem 0;
   background-color: $bg-secundry;
-  p{
-      color: $color-muted;
-      max-width: 100%;
-      @media (max-width:990px) {
-        max-width: 85%;
-      }
+  p {
+    color: $color-muted;
+    max-width: 100%;
+    @media (max-width: 990px) {
+      max-width: 85%;
+    }
   }
-  .left-img-projects{
+  .left-img-projects {
     position: relative;
-    @media (min-width:990px) {
-      &::after{
+    @media (min-width: 990px) {
+      &::after {
         content: "";
         position: absolute;
         top: 28%;
         width: 9px;
         height: 183px;
         background-color: $bg-light;
-    }
+      }
     }
   }
-  .right-projects{
+  .right-projects {
     height: 15rem;
-    .right-txt{
+    .right-txt {
       @extend %letter-space;
     }
-    p{
+    p {
       @extend %letter-space;
     }
   }
 
   // bottom projects
-  .right-bottom-projects{
+  .right-bottom-projects {
     max-width: 95%;
     position: relative;
-    h4{
+    h4 {
       @extend %letter-space;
     }
-    p{
+    p {
       color: $color-secundry;
       @extend %letter-space;
     }
-    @media (min-width:990px) {
+    @media (min-width: 990px) {
       max-width: 75%;
-      &::after{
+      &::after {
         content: "";
         position: absolute;
         width: 115px;
@@ -150,12 +146,107 @@ header {
         background-color: $bg-light;
       }
     }
-   
   }
-  .left-bottom-projects{
-    @extend  .right-bottom-projects;
-    &::after{
+  .left-bottom-projects {
+    @extend .right-bottom-projects;
+    &::after {
       right: 0;
     }
   }
 }
+
+///////section-contact
+.section-contact {
+  padding: 9rem 0 0 0;
+  min-height: 60rem;
+  background-color: $bg-secundry;
+  width: 100%;
+  &-title-top {
+    @extend %letter-space;
+    @media (max-width: 768px) {
+      text-align: center;
+      max-width: 70%;
+    }
+  }
+  .btn-subs {
+    @include btn-light();
+  }
+  &-input {
+    width: 39rem;
+    padding: 14px 37px;
+    border-radius: 5px;
+    border: 0;
+    @media (max-width: 768px) {
+      width: 25rem;
+    }
+    &::placeholder {
+      font-size: $font-sm;
+      letter-spacing: 3;
+      font-weight: 600;
+    }
+  }
+
+  // bottom-contact
+  &-bottom {
+    height: 100%;
+    background-color: black;
+    height: auto;
+    .section-content-box {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $bg-light;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        bottom: 0;
+      }
+      @include wh100();
+      min-height: 200px;
+      background-color: #fff;
+      border-radius: 5px;
+      &-main {
+        width: 100%;
+        p {
+          font-size: $font-sm;
+          letter-spacing: 3;
+          font-weight: 500;
+        }
+      }
+      &-main::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 46px;
+        height: 4px;
+        background-color: $bg-light;
+      }
+      &-bottom {
+        color: $color-muted;
+        @extend %letter-space;
+        a {
+          color: $bg-light;
+        }
+      }
+    }
+
+   
+    
+  }
+ .footer{
+   height: 21rem;
+   .socials img{
+    border-radius: 50%;
+    background-color: #adadad1f;
+    padding: 16px !important;
+   }
+ }
+  .text-footer{
+    color: $color-secundry;
+    margin-top: 5rem;
+  }
+}
+

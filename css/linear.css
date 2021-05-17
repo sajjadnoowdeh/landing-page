@@ -5,8 +5,10 @@
     min-height: 40rem;
   }
   
-  /* .header-bg-top .nav-link, .header-bg-top .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
-  } */
-
+  .section-contact-top{
+    background: linear-gradient(rgb(244 241 241 / 11%), rgb(0 0 0 / 99%)),url(../assets/img/bg-signup.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
   

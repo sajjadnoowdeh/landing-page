@@ -31,6 +31,7 @@ body,html{
       font-size: $font-sm;
       letter-spacing: 3;
       box-shadow: -1px 5px 15px -6px #000000;
+      border-radius: 5px;
 }
 
 @mixin  flexCenter(){
