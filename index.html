@@ -13,15 +13,15 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-scroll" >
     <!------------Header------------------------->
-    <header>
+    <header id="header">
       <div class="header-bg-top">
         <!--------------------Navbar---------------  -->
         <div class="fixed-top nav-main"">
           <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light py-4">
-              <a class="navbar-brand font-weight-bold" href="#"
+            <nav class="navbar navbar-expand-lg navbar-light py-4" id="navbar-scroll">
+              <a class="navbar-brand font-weight-bold" href="#header"
                 >Start Bootstrap</a
               >
               <button
@@ -40,14 +40,14 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link pl-md-5" href="#">About</a>
+                    <a class="nav-link pl-md-5" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link pl-md-5" href="#">Projects</a>
+                    <a class="nav-link pl-md-5" href="#projects">Projects</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link pl-md-5" href="#">Contact</a>
+                    <a class="nav-link pl-md-5" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <div class="header-bottom">
+      <div class="header-bottom" id="about">
             <div class="container d-flex flex-column justify-content-center align-items-center">
               <h2 class="text-white  mt-md-5">Built with Bootstrap 4</h2>
             <p class="header-bottom-txt py-3">
@@ -81,7 +81,7 @@
     </header>
     <!-------------End Header-------------------->
     <!---------------Section-Projects------------>
-      <section class="section-projects ">
+      <section class="section-projects " id="projects">
           <div class="container">
             <div class="row">
               <div class="col-lg-8">
@@ -125,7 +125,7 @@
       </section>
     <!---------------End-Section-Projects------------->
     <!-------------Section-contact-------------------->
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
         <div class="section-contact-top">
              <div class="container">
                 <div class="h-100 d-flex flex-column justify-content-center align-items-center">
@@ -200,4 +200,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="./js/app.js"></script>
+  <script>
+    $('body').scrollspy({ target: '#navbar-scroll' })
+  </script>
 </html>

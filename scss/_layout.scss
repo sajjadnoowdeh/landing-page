@@ -250,3 +250,19 @@ header {
   }
 }
 
+.navbar .nav-link.active{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  color: $bg-light !important;
+   @media (min-width:990px) {
+    &::after{
+      content: "";
+      position: absolute;
+      width: 93px;
+      height: 5px;
+      top: 59px;
+      right: -16px;
+      background-color: $bg-light;
+    }
+   }
+}

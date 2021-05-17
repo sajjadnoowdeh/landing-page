@@ -5,6 +5,7 @@
 
 body, html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .navbar-light .navbar-brand, .navbar-light .header-bg-top .nav-link, .header-bg-top .navbar-light .nav-link, .navbar-light .navbar-nav .active > .nav-link, .section-projects .right-projects .right-txt, .section-projects .right-projects p, .section-projects .right-bottom-projects h4, .section-projects .left-bottom-projects h4, .section-projects .right-bottom-projects p, .section-projects .left-bottom-projects p, .section-contact-title-top, .section-contact-bottom .section-content-box-bottom {
@@ -313,5 +314,23 @@ header {
 .section-contact .text-footer {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 5rem;
+}
+
+.navbar .nav-link.active {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  color: #64a19d !important;
+}
+
+@media (min-width: 990px) {
+  .navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 5px;
+    top: 59px;
+    right: -16px;
+    background-color: #64a19d;
+  }
 }
 /*# sourceMappingURL=main.css.map */

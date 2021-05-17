@@ -16,6 +16,7 @@ $f: "font";
 }
 body,html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @mixin wh100() {
